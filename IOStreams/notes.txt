@@ -1,0 +1,6 @@
+* for IO streams we usually use classes named Scanner, FileReader, FileWriter, FileInputStream, FileOutputStream, BufferedReader, BufferedWriter
+
+* 2 types of streams : byte and character 
+* FileInputStream, FileOutputStream ---> used for binary
+* BufferedReader, BufferedWriter ---> used for large text files read line by line or string by string 
+

@@ -1,3 +1,4 @@
+package FileHandling;
 import java.io.File; //File package used to work with Files
 import java.io.FileNotFoundException;
 import java.io.IOException; // IOException used for error handling
@@ -40,6 +41,7 @@ public class FileHandling{
                 String data = myReader.nextLine();
                 System.out.println(data);
             }
+            myReader.close();
         }catch(FileNotFoundException e){
             e.printStackTrace();
         }
