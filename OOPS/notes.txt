@@ -1,0 +1,77 @@
+* objects of one class can be accessed form the other classes
+* final keyword used infront of the attribute/variable if we dont want to change its value
+* constructors dont have return type
+* Access modifiers: public --> clode accessibe for all classes
+                    private --> code accessible only within declared  class
+                    default--> code only accessible inside same package 
+                    protected--> code accesible inside same package and subclasses
+
+* Non access modifiers: final--> used if dont wanna change value of attribute 
+                        static--> static method belongs to a class not to an object so we can call static method without creating object of that class or it can be called using class name
+                        abstract --> abstract method belongs to abstract class and it doesnt have a body. Body is provided by subclasses
+
+* for inheritance extends keyword is used
+* abstract class can contain both abstract and non abstractmethods
+* subclass should implement only abstract methods or can override non abstract ones
+* if class is declared final then it cannot be inherited by any subclass
+* abstract class cannot be instantiated directly, we cannot create object of the abstract class
+------------------------------------------------------------------------------------------------------------------------
+
+** Encapsulation
+
+* sensitive info (variables) is kept hidden by using private and public get and set methods are introduced to access them
+
+
+## Packages :
+
+* used to group related classes
+* think of it as a folder in a file directory
+* 2 types : Inbuilt(used by import keyword) and user built
+* to create own package use keyword package at top 
+
+## inheritance
+
+* final class cannot be inherited
+* use extend keyword for inheritance
+
+## polymorphism 
+
+* taking many forms
+* usually subclasses can implement therir own behaviour even if behaviour is already defined by parent class
+
+
+* can use super keyword to call methods from parent class that has been overriden in the child class
+* can also use super to call parent class attribute 
+* can also use super to call parent class constructors
+
+## Nested classes
+
+* to access inner class, create object of the outer class and then create an object of the inner class
+* if i dont want outside object to access inner classs , declare it as private
+* inner class can also be static i.e you can access it without creating an object of the outer class
+* inner classes can access attributes and methods of the outside classes too 
+
+## Interfaces
+
+* interfaces is completely abstract class that is used to group related methods with empty bodies
+* To access interface methods it must be implemented by another class with implements keyword 
+* class can only extend one class but can implements multiple interfaces
+* interfaces dont have constructors like abstract classess
+* interface methods are by default abstract and public
+* interface attributes are by deafault public, static and final
+
+
+## Anonymous classes
+
+* it is a class without name and is used at the same time 
+* usually use anonymous class to override methods of an existing class or interface, without writing a separate class file
+
+
+## Enums
+
+* enum is a special class that represents a group of constants(like final variables)
+* to create an enum use enum keyword instead of class or interface and separate constants with a comma . NOTE that they should be in uppecase
+* can also have enum inside the class
+* enum type has a values() method thich returns array of all enum constants
+* enum can just like class have attirbutes and methods. only difference is that enum constants are public, static and final 
+* enum cannot be used to create objects and it cannot extend other classes but it can implements interfaces
