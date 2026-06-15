@@ -1,0 +1,8 @@
+## Collections
+
+* ArrayList, HashSet, HashMa are part of collection interfaces(like List, Set, Map) and then ArrayList, HashSet, HashMap are classes tat implements those interfaces
+* In list Interface classes that implements it are : ArrayList(For maintaining order and duplicates), LinkedList(For fast insertion and removal of elements)
+* For Set --> HashSet(unique items with no order), TreeSet(sorted set of unique elements), LinkedHashSet(maintain order as per insertion of elements)
+* For Map --> HashMap(key value pair with random order), TreeMap(sorted map based on natural order of keys), LinkedHashMap(maintain order in which keys were inserted)
+
+
